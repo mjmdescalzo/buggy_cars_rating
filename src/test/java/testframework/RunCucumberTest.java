@@ -5,7 +5,9 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
+@CucumberOptions(
+        features = {"src/test/resources/features"},
+        glue = {"classpath:testframework.steps"},
+        plugin = {"pretty"})
 public class RunCucumberTest {
-
 }
