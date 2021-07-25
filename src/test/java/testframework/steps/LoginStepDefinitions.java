@@ -52,4 +52,14 @@ public class LoginStepDefinitions {
     public void theErrorMessageIsDisplayedAtTheHeader(String expectedMessage) {
         Assert.assertTrue("Failed: User should not be able to login", header.getMessage().equals(expectedMessage));
     }
+
+    @When("I click the Logout button")
+    public void iClickTheLogoutButton() {
+        header.clickLogout();
+    }
+
+    @Then("the is now logged out")
+    public void theIsNowLoggedOut() {
+        Assert.assertTrue("Failed: User should now be logged out", header.loginIsDisplayed());
+    }
 }

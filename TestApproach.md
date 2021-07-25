@@ -1,5 +1,4 @@
 # Test Approach
-___
 ## Test Objectives
 * Perform and record exploratory test
 * Automate test that has passed for regression testing

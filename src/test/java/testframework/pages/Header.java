@@ -12,6 +12,7 @@ public class Header extends BasePage{
     final By loginBtn = By.xpath("//button[text()='Login']");
     final By registerBtn = By.xpath("//a[text()='Register']");
     final By headerMessage = By.xpath("//my-login//span");
+    final By logoutBtn = By.xpath("//a[text()='Logout']");
 
     public Header(WebDriver driver, Wait<WebDriver> wait) {
         super(driver, wait);
@@ -33,7 +34,15 @@ public class Header extends BasePage{
         clickElement(loginBtn);
     }
 
+    public void clickLogout() {
+        clickElement(logoutBtn);
+    }
+
     public String getMessage() {
         return getElementText(headerMessage);
+    }
+
+    public boolean loginIsDisplayed() {
+        return elementIsDisplayed(loginBtn);
     }
 }

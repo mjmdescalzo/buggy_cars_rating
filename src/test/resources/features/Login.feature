@@ -1,4 +1,4 @@
-Feature: New user registration
+Feature: User login
 
 
   Scenario: Validate successful user login
