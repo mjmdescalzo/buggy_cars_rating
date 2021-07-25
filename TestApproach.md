@@ -6,7 +6,7 @@
 ## High-level functionalities in scope
 | Functionality |
 | ------------- |
-| Regisration   |
+| Registration  |
 | Login         |
 | Logout        |
 ___
